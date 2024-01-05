@@ -56,3 +56,18 @@ fn main() {
     // Imprime a ordem dos nós visitados durante a BFS.
     println!("{:?}", order);
 }
+
+
+
+
+Imports: Importa a biblioteca VecDeque do módulo std::collections.
+Função bfs:
+graph: &Vec<Vec<usize>>, start: usize: Parâmetros da função, onde graph é a representação do grafo e start é o nó inicial para iniciar a BFS.
+visited: Vetor que rastreia os nós visitados durante a BFS.
+queue: Deque para armazenar os nós a serem visitados em ordem.
+order: Vetor para armazenar a ordem dos nós visitados.
+Loop Principal:
+Enquanto há nós na fila (queue), retira o nó da frente da fila (pop_front()), adiciona à ordem de visita e visita seus vizinhos não visitados.
+Função main:
+Define o grafo como uma lista de adjacências.
+Chama a função bfs com o nó inicial e imprime a ordem dos nós visitados.
